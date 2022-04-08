@@ -1,0 +1,27 @@
+.logo > img {
+    max-width: 30%;
+}
+
+.image > img{
+    max-width: 50%;
+    object-fit: contain;
+}
+
+.logo {
+    text-align: center !important;
+    padding: 16px 12px;
+}
+
+.image {
+    max-height: 50%;
+    max-width: 50%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-left: 50%;
+}
