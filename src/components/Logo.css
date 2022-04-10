@@ -1,0 +1,16 @@
+.registerHeading {
+    letter-spacing: 0;
+    color: #192451;
+    font-size: 32px;
+}
+
+.logo {
+    text-align: center !important;
+    padding: 16px 12px;
+    margin-bottom: 50px;
+}
+
+.logo > img {
+    max-width: 40%;
+}
+

@@ -1,5 +1,5 @@
 .logo > img {
-    max-width: 30%;
+    max-width: 40%;
 }
 
 .image > img{
@@ -10,6 +10,7 @@
 .logo {
     text-align: center !important;
     padding: 16px 12px;
+    margin-bottom: 50px;
 }
 
 .image {
@@ -24,4 +25,57 @@
     right: 0;
     margin: auto;
     margin-left: 50%;
+}
+
+.registerBody {
+    margin-left: 35%;
+}
+
+.registerHeading {
+    letter-spacing: 0;
+    color: #192451;
+    font-size: 32px;
+}
+
+.register {
+    text-align: justify;
+}
+
+.registerBody > p {
+    font-size: 18px;
+    color: #a2a2a6;
+}
+
+.formText {
+    color: #192451;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.leftBody {
+    max-width: 50%;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid rgb(161, 158, 158);
+    background-color: #f3f3f5;
+    width: 60%;
+    padding: 12px 0;
+}
+
+input:focus {
+    outline: none;
+    border-bottom: 1px solid red;
+}
+
+Button{
+    display: block;
+    margin: 40px 10px;
+    max-width: 70%;
+    background-color: #192451;
+    color: rgb(194, 194, 194);
+    font-size: 20px;
+    padding: 12px 50px;
+    border-radius: 6px;
 }
