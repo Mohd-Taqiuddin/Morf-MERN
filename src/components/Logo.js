@@ -10,6 +10,9 @@ function Logo() {
         </div>
         <div className='registerHeading'>Welcome to Globiliti!</div>
         </div>
+        <div className='image'>
+            <img src='https://goglobiliti.com/assets/images/onboarding-1.png' alt='img' />
+        </div>
     </div>
   )
 }

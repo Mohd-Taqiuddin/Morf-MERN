@@ -3,6 +3,7 @@ import './Register.css';
 import { Container, Row, Col } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 import {Link} from "react-router-dom";
+import Logo from '../components/Logo';
 
 function Register() {
     const [name, setName] = useState("");
@@ -16,12 +17,9 @@ function Register() {
             <Container>
                 <Row>
                     <Col>
+                    <Logo />
                         <div className='leftBody'>
-                        <div className='logo'>
-                            <img src='https://goglobiliti.com/assets/images/globiliti-logo2x.png' alt='globiliti logo' /> 
-                        </div>
                         <div className='registerBody'>
-                            <div className='registerHeading'>Welcome to Globiliti!</div>
                             <p>Create your school account</p>
                             <div className='registerForm'>
                                 <form onSubmit={handleSubmit}>
@@ -54,13 +52,8 @@ function Register() {
                                     </Button>
                                 </form>
                             </div>
-                            <Link to="/login" style={{ textDecoration: 'none', color:'black' }}> ALREADY REGISTER? LOG IN </Link>
+                            <Link to="/login" style={{ textDecoration: 'none', color:'black', marginLeft:'15rem' }}> ALREADY REGISTER? LOG IN </Link>
                         </div>
-                        </div>
-                    </Col>
-                    <Col >
-                        <div className='image'>
-                            <img src='https://goglobiliti.com/assets/images/onboarding-1.png' alt='img' />
                         </div>
                     </Col>
                 </Row>
