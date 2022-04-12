@@ -1,0 +1,71 @@
+.sideBar {
+    max-width: 16%;
+    height: 70rem;
+    background-color: #131a34;
+}
+
+.gLogo > img {
+    max-width: 90%;
+    padding-top: 6px;
+    filter:  brightness(0.6) invert(0.3);
+}
+
+.gLogo {
+    border-bottom: 1px solid #666;
+}
+
+.sideBar__item1 {
+    background-color: #323c61;
+    padding-right: 16px;
+    font-size: 18px;
+    padding: 10px 20px;
+    cursor: pointer;
+    outline: none;
+    color: #c2c6d9;
+    text-align: justify;
+}
+
+.sideBar__item1 > img {
+    padding-right: 20px;
+    width: 9%;
+    vertical-align: middle;
+}
+
+.sideBar__item2 > img {
+    padding-right: 20px;
+    width: 9%;
+    vertical-align: middle;
+}
+
+.sideBar__item2 {
+    padding-right: 16px;
+    font-size: 18px;
+    padding: 15px 20px;
+    cursor: pointer;
+    outline: none;
+    color: #c2c6d9;
+    text-align: justify;
+}
+
+.sideBar__items {
+    border-bottom: 1px solid #666;
+}
+
+.addTeam {
+    display: flex;
+    padding: 25px 0;
+}
+
+.addText {
+    color: #c2c6d9;
+    padding: 0 20px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-top: 1px solid #666;
+    background-color: #131a34;
+    width: 16%;
+}
