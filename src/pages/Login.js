@@ -1,13 +1,39 @@
 import React, { useState } from 'react';
 import Logo from '../components/Logo';
 import './Login.css';
-import {Link} from "react-router-dom";;
+import { Link, useNavigate } from "react-router-dom";
+import axios from '../axios';
 
 function Login() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
+    const navigate = useNavigate();
 
-    const handleSubmit = (e) => {}
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+
+        const user = {
+            "email": email,
+            "password": password
+        };
+
+        axios.post('http://localhost:5000/login', user)
+            .then(response => {           
+                console.log(response);
+                if(response.status === 200){
+                    if(response.data.length === 0){
+                        alert("Check Credentials, Email/Password incorrect!")
+                    } else{
+                        navigate('/dashboard');
+                    }
+                    
+                }
+            })
+            .catch(error => {
+                alert(error+ " Server Error");
+            });
+    }
   return (
     <div>
         <Logo />
