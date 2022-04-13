@@ -36,4 +36,4 @@ npm start
 
 ### Dashboard <br/>
 
-<img src="/dashbaord.png"> <br/>
+<img src="/dashboard.png"> <br/>
