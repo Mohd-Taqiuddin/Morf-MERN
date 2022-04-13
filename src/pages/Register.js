@@ -6,13 +6,21 @@ import { Link, useNavigate } from "react-router-dom";
 import Logo from '../components/Logo';
 import axios from '../axios';
 
-function Register() {
+function Register(isLoggedIn) {
 
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
 
     const navigate = useNavigate();
+
+
+    // if(isLoggedIn.isLoggedIn === true){
+    //     navigate('/dashboard');
+
+    // } else {
+    //     console.log('not Logged In!');
+    // }
 
     const handleSubmit = (e) => {
         e.preventDefault();

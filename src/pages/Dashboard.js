@@ -1,7 +1,26 @@
 import React from 'react';
 import './Dashboard.css';
+import { useNavigate } from "react-router-dom";
 
-function Dashboard() {
+function Dashboard(isLoggedIn) {
+
+    const navigate = useNavigate();
+
+    console.log(isLoggedIn.isLoggedIn);
+
+    // if(isLoggedIn.isLoggedIn === true){
+    //     console.log('Logged In!');
+    // } else {
+    //     navigate('/login');
+    // }
+
+    const handleClick = () => {
+        isLoggedIn = false;
+        console.log('logout');
+        navigate('/login');
+    }
+
+
   return (
     <div className='dashboard'>
         <div className='sideBar'>
@@ -52,7 +71,7 @@ function Dashboard() {
                     <img src='https://goglobiliti.com/assets/icons/Settings.svg' alt='logo'/>
                         My Account
                 </div>
-                <div className='sideBar__item2'>
+                <div className='sideBar__item2' onClick={handleClick}>
                     <img src='https://goglobiliti.com/assets/icons/Sign-out.svg' alt='logo'/>
                         Log out
                 </div>

@@ -4,10 +4,16 @@ import './Login.css';
 import { Link, useNavigate } from "react-router-dom";
 import axios from '../axios';
 
-function Login() {
+function Login(isLoggedIn) {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const navigate = useNavigate();
+
+    // if(isLoggedIn){
+    //     navigate('/dashboard');
+    // } else {
+    //     console.log('Not Logged In!');
+    // }
 
 
     const handleSubmit = (e) => {
@@ -25,6 +31,7 @@ function Login() {
                     if(response.data.length === 0){
                         alert("Check Credentials, Email/Password incorrect!")
                     } else{
+                        isLoggedIn = true;
                         navigate('/dashboard');
                     }
                     
@@ -64,7 +71,10 @@ function Login() {
               color:'black',
               marginLeft:'15rem' }}> CREATE NEW ACCOUNT </Link>
         </div>
-        
+        {
+            
+            // isLoggedIn.isLoggedIn? navigate('/dashboard'): console.log('not logged in')
+        }
     </div>
   )
 }
